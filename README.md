@@ -65,8 +65,6 @@ Digamos que estamos convencidos que precisamos de uma tipagem.
 | Suporte a framework	| vários, including Express, Vue, React, Angular, etc.	| Somente React |
 | Documentação	| Ampla |	Muito fraca |
 | Autocomplete	| Disponível  |	Não há |
-| Detectar erros no compilamento	| Disponivel em editores e IDE's |	Não há |
-| Syntax	| Tipagem simples, 	| Comprehensive type checking, includes both static and dynamic type annotations |
 | Generics |	Suportado	| Suportado |
 | Suporte em projetos existentes |	Typescript pode ser adicionado com o pacote Typescript |  Adicionado com o Babel |
 | Erros detectados em compilação	| Disponivel em IDE's e editores de texto (principalmente VSCode) |	Não há |
