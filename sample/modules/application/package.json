@@ -1,0 +1,19 @@
+{
+  "name": "typescript-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "tsc",
+    "watch": "tsc -w",
+    "execute": "node ./dist/index.js"
+  },
+  "author": "Jomar",
+  "license": "ISC",
+  "dependencies": {
+    "typescript-module-calc": "1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.3"
+  }
+}

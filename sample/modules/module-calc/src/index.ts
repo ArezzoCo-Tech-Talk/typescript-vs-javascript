@@ -1,0 +1,1 @@
+export { default as Calcular } from './calc-ts/calc';
