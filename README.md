@@ -65,10 +65,15 @@ Digamos que estamos convencidos que precisamos de uma tipagem.
 | Suporte a framework	| vários, including Express, Vue, React, Angular, etc.	| Somente React |
 | Documentação	| Ampla |	Muito fraca |
 | Autocomplete	| Disponível  |	Não há |
+| Detectar erros no compilamento	| Disponivel em editores e IDE's |	Não há |
+| Syntax	| Tipagem simples, 	| Comprehensive type checking, includes both static and dynamic type annotations |
+| Generics |	Suportado	| Suportado |
+| Suporte em projetos existentes |	Typescript pode ser adicionado com o pacote Typescript |  Adicionado com o Babel |
 | Erros detectados em compilação	| Disponivel em IDE's e editores de texto (principalmente VSCode) |	Não há |
 | Syntax	| Compreensiva e simples	| Compreensiva e simples |
 | Generics |	Suportado	| Suportado |
 | Suporte para projetos existentes |	O pacote [Typescript](https://www.npmjs.com/package/typescript) pode ser adicionado para dar suporte ao Typescript| Suporte via Babel |
+
 
 # TypeScript
 
@@ -95,6 +100,10 @@ Desde a versão 2 eles perceberam a necessidade da tipagem.
 ### Material UI
 
 Nos componentes do Material UI se usamos o auxilio de preenchimento já mostra os possíveis atributos, após escrever o atributo="" se pressionar o auxilio dentro do "" irá mostrar todas as opções (Enum).
+
+## Vantagens do Typescript
+
+A grande sacada por trás de utilizar o Typescript é descobrir os erros no nosso código durante o desenvolvimento e com isso incrementar a inteligencia (Intelissense) da IDE que estivermos utilizando.
 
 ## Mitos
 
