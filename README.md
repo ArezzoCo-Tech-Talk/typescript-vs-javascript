@@ -10,7 +10,7 @@ Tudo começou com o Ajax, quando as aplicações pararam de ter que recarregar a
 
 Progressivamente os websites evoluiram da seguinte forma em relação ao javascript:
 
-- sem javascript
+- [sem javascript](https://norvig.com/design-patterns/ppframe.htm)
 - ajax, renderizar templates, alterar elementos da DOM
 - a página inteira em JavaScript
 - O site inteiro em JavaScript, a navegação não recarrega mais a página (SPA)
@@ -65,10 +65,13 @@ Digamos que estamos convencidos que precisamos de uma tipagem.
 | Suporte a framework	| vários, including Express, Vue, React, Angular, etc.	| Somente React |
 | Documentação	| Ampla |	Muito fraca |
 | Autocomplete	| Disponível  |	Não há |
-| Compiler error detection	| Available in IDEs and text editors |	Não há |
-| Syntax	| Comprehensive type checking, includes both static and dynamic type annotations	| Comprehensive type checking, includes both static and dynamic type annotations |
-| Generics |	Supported	| Supported |
-| Support in existing projects |	TypeScript package can be added to support TypeScript	| Add support with Babel |
+| Generics |	Suportado	| Suportado |
+| Suporte em projetos existentes |	Typescript pode ser adicionado com o pacote Typescript |  Adicionado com o Babel |
+| Erros detectados em compilação	| Disponivel em IDE's e editores de texto (principalmente VSCode) |	Não há |
+| Syntax	| Compreensiva e simples	| Compreensiva e simples |
+| Generics |	Suportado	| Suportado |
+| Suporte para projetos existentes |	O pacote [Typescript](https://www.npmjs.com/package/typescript) pode ser adicionado para dar suporte ao Typescript| Suporte via Babel |
+
 
 # TypeScript
 
@@ -95,6 +98,10 @@ Desde a versão 2 eles perceberam a necessidade da tipagem.
 ### Material UI
 
 Nos componentes do Material UI se usamos o auxilio de preenchimento já mostra os possíveis atributos, após escrever o atributo="" se pressionar o auxilio dentro do "" irá mostrar todas as opções (Enum).
+
+## Vantagens do Typescript
+
+A grande sacada por trás de utilizar o Typescript é descobrir os erros no nosso código durante o desenvolvimento e com isso incrementar a inteligencia (Intelissense) da IDE que estivermos utilizando.
 
 ## Mitos
 
@@ -149,3 +156,31 @@ Material UI
 Precisamos mudar um formato de objeto em toda a aplicação, para isso só precisamos alterar a interface e todos vão alertar se algo estiver errado.
 
 ![image](https://user-images.githubusercontent.com/27368585/82401853-4d596280-9a31-11ea-966f-85a25bf18435.png)
+
+### Quando queremos uma estrutura boa
+
+```ts
+enum Ojective {
+  HEALTH = 'Saúde',
+  MUSCLE = 'Músculatura',
+  LOSE_WEIGHT = 'Perder peso',
+}
+
+enum Biotype {
+  ECTOMORPH = 'Ectomorfo',
+  ENDOMORPH = 'Endomorfo',
+  MESOMORPH = 'Mesomorfo'
+}
+
+export interface User {
+  name: string;
+  age: number;
+  objectives: Array<Ojective>;
+  biotype: Biotype
+}
+
+export interface Account {
+  user: User;
+  meals: Array<Meal>; // ...
+}
+```
