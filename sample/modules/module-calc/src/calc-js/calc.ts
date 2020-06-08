@@ -2,7 +2,7 @@ function somar(número1, número2) {
   return número1 + número2;
 }
 
-function subtrair(número1, número2) {
+function subtrair(número1, número2: number) {
   return número1 - número2;
 }
 
